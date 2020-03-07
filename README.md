@@ -1,0 +1,1 @@
+Inicializar variables de entorno
