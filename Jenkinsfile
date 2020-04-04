@@ -11,7 +11,7 @@ pipeline {
 
     stage('DCKR Build') {
       steps {
-        sh 'dockerImage= docker.build -t mauolas/proyectocdk:1.0 .'
+        sh 'docker build -t mauolas/proyectocdk:1.0 .'
         sh 'docker images'
       }
     }
