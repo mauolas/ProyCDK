@@ -18,7 +18,7 @@ pipeline {
 
     stage('Deploy image') {
       steps {
-        sh 'docker login -u mauolas --password mauRIc_1'
+        sh 'docker login -u mauolas --password-stdin mauRIc_1'
         sh 'docker push  mauolas/proyectocdk:1.0'
       }
     }
