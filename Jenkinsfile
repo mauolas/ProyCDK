@@ -16,5 +16,11 @@ pipeline {
       }
     }
 
+    stage('Deploy image') {
+      steps {
+        sh 'docker push mauolas/proyectocdk:1.0'
+      }
+    }
+
   }
 }
