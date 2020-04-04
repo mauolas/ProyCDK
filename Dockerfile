@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 
-RUN apk add unixodbc psqlodbc
+RUN apk add gcc musl-dev gcc libffi-dev gcc libressl-dev g++ unixodbc unixodbc-dev psqlodbc
 
 ADD  ./src /code
 
