@@ -23,4 +23,8 @@ pipeline {
     }
 
   }
+  environment {
+    registryCrendencial = 'dockerhub_id'
+    dockerimage = ''
+  }
 }
